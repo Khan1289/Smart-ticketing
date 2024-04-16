@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <title>E-Ticket</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
 </head>
 <body>
     <header>
@@ -36,19 +41,22 @@
         </div>
       </div>
     </header>
-    <main class="bg-white px-20">
+    <main class="bg-white">
+      <section class="bg-white px-20">
         <div class="hero min-h-screen bg-[url(images/banner.png)] bg-contain bg-center bg-no-repeat">
-            <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-2xl">
-                <h1 class="mb-5 text-5xl font-bold text-white">End-to-End Travel with<br><span class="text-green-500">R Paribahan</span></h1>
-                <p class="mb-5 text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                <button class="btn btn-success">Buy Tickets</button>
-              </div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-2xl">
+              <h1 class="mb-5 text-5xl font-bold text-white">End-to-End Travel with<br><span class="text-green-500">R Paribahan</span></h1>
+              <p class="mb-5 text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+              <button class="btn btn-success"><a href="#ticket">Buy Tickets</a></button>
             </div>
           </div>
-          <section>
-                <h1 class="text-center text-5xl font-bold text-black mb-5">Best offers for you</h1>
-                <div class="flex justify-around gap-10 flex-col lg:flex-row" >
+        </div>
+      </section>
+       
+          <section class="bg-white px-20">
+                <h1 class="text-center text-5xl font-bold text-black mb-10">Best offers for you</h1>
+                <div class="flex justify-around gap-10 flex-col lg:flex-row mb-10" >
                 <div class="flex">
                     <div class="bg-orange-400 px-20 py-8 rounded-3xl border-dotted border-r-2"> 
                        <h1 class="text-5xl font-bold text-black mb-3">15% OFF</h1>
@@ -73,7 +81,60 @@
                 </div>
             </div>
             <div class="w-full flex justify-center mt-5">
-            <button class="btn text-green-400 bg-white border-green-600 border-2">See All Offers</button>
+            <button class="btn text-green-400 bg-white border-green-600 border-2 mb-10">See All Offers</button>
+            </div>
+          </section>
+          <section id="ticket" class="bg-blue-100 w-full rounded-t-[5rem]">
+              <h1 class="text-center text-5xl font-bold text-black py-10" >R Paribahan</h1>
+              <p class="text-center">Experience hassle-free travel with our smart bus ticketing system. <br> Say goodbye to long queues and paper tickets – our digital tickets offer convenience at your fingertips.</p>
+              <div class="flex justify-center mt-5 mx-20">
+                <div class="bg-white px-20 py-8 rounded-3xl border-dotted border-r-2 w-3/4"> 
+                   <div class="flex justify-between mb-5">
+                    <div class="flex gap-5">
+                      <div><img src="images/bus-logo.png" alt=""></div>
+                      <div>
+                        <h3>Greenline Paribahan</h3>
+                        <p>Coach-009-WEB ! AC_Business</p>
+                      </div>
+                    </div>
+                     <div>
+                        <a class="btn  bg-green-200 text-green-600 border-green-400"><img src="images/seat-green.png" alt="Bus Icon">Seats left</a>
+                     </div>
+                   </div>
+
+
+                   <div class="bg-[#F7F8F8] rounded-3xl py-5">
+
+                    <div class="flex justify-between  border-b-4 border-dotted pb-5 mx-5">
+                      <p class="text-[rgba(3,7,12,0.5)]">Route</p><p class="font-semibold text-black">Dhaka-Sylhet</p>
+                    </div>
+                    <div class="flex justify-between  border-b-4 border-dotted py-5 mx-5">
+                      <p class="text-[rgba(3,7,12,0.5)]">Departure Time</p><p class="font-semibold text-black">9:00 PM</p>
+                    </div>
+                    <div class="pt-5 mx-5 flex justify-between">
+                        <div class="bg-[rgba(3,7,12,.05)] w-1/4 rounded-lg">
+                           <p class=" py-3 text-center text-black font-medium">Boarding Point - Laxmipur</p>
+                        </div>
+                        <div class="bg-[rgba(3,7,12,.05)] w-1/4 rounded-lg">
+                          <p class="py-3 text-center text-black font-medium">Dropping Point - Bogura</p>
+                       </div>
+                       <div class="bg-[rgba(3,7,12,.05)] w-1/4 rounded-lg">
+                        <p class="py-3 text-center text-black font-medium">Est. Time - 11 Hour</p>
+                     </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="bg-white rounded-3xl w-1/4">
+                  <div class="card w-full bg-white">
+                    <figure class="px-10 pt-10">
+                      <img src="images/fare.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center text-black">
+                      <h2 class="card-title text-black">550 Taka</h2>
+                      <p class="text-[rgba(3,7,12,0.6)]">Per Seat</p>
+                    </div>
+                  </div>
+                </div>
             </div>
           </section>
     </main>
