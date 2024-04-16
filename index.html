@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <title>E-Ticket</title>
+</head>
+<body>
+    <header>
+    <div class="navbar bg-white px-20">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  text-[rgba(3,7,18,0.70)]">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl text-black">E-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-[rgba(3,7,18,0.70)]">
+            <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn  bg-green-200 text-green-600 border-green-400">Bus<img src="images/bus-icon.png" alt="Bus Icon"></a>
+        </div>
+      </div>
+    </header>
+    <main class="bg-white px-20">
+        <div class="hero min-h-screen bg-[url(images/banner.png)] bg-contain bg-center bg-no-repeat">
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-2xl">
+                <h1 class="mb-5 text-5xl font-bold text-white">End-to-End Travel with<br><span class="text-green-500">R Paribahan</span></h1>
+                <p class="mb-5 text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button class="btn btn-success">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+          <section>
+                <h1 class="text-center text-5xl font-bold text-black mb-5">Best offers for you</h1>
+                <div class="flex justify-around gap-10 flex-col lg:flex-row" >
+                <div class="flex">
+                    <div class="bg-orange-400 px-20 py-8 rounded-3xl border-dotted border-r-2"> 
+                       <h1 class="text-5xl font-bold text-black mb-3">15% OFF</h1>
+                       <h3 class="text-lg font-bold text-black">on your next purchase</h3>
+                       <p class="text-[rgba(3,7,12,0.5)]">use by January 2024</p>
+                    </div>
+                    <div class="bg-orange-400 px-12 py-8 pt-16 rounded-3xl">
+                        <h1 class="text-center text-2xl font-bold text-black mb-1">NEW15</h1>
+                        <P class="text-[rgba(3,7,12,0.5)]">Coupon Code</P>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="bg-pink-300 px-20 py-8 rounded-3xl border-dotted border-r-2"> 
+                       <h1 class="text-5xl font-bold text-black mb-3">20% OFF</h1>
+                       <h3 class="text-lg font-bold text-black">on your next purchase</h3>
+                       <p class="text-[rgba(3,7,12,0.5)]">use by January 2024</p>
+                    </div>
+                    <div class="bg-pink-300 px-12 py-8 pt-16 rounded-3xl">
+                        <h1 class="text-center text-2xl font-bold text-black mb-1">NEW15</h1>
+                        <P class="text-[rgba(3,7,12,0.5)]">Coupon Code</P>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex justify-center mt-5">
+            <button class="btn text-green-400 bg-white border-green-600 border-2">See All Offers</button>
+            </div>
+          </section>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
